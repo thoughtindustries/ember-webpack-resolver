@@ -24,8 +24,8 @@
     "webpack"
   ],
   "devDependencies": {
-    "css-loader": "^0.25.0",
-    "ember-templates-loader": "~0.1.0",
+    "css-loader": "*",
+    "ember-templates-loader": "git://github.com/thoughtindustries/ember-templates-loader.git#43222533f73a9996930619c918f0a83661fcfd13",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
@@ -34,9 +34,9 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-webpack": "^1.0.18",
     "matchdep": "^1.0.1",
-    "script-loader": "^0.7.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "script-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
   }
 }
