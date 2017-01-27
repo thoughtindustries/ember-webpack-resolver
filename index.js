@@ -12,6 +12,9 @@ module.exports = function(options) {
   options.has = options.has || options.context.keys();
   options.components = options.components || Object.create(null);
 
+  window.webpackHas = options.has;
+  window.webpackRequire = options.context;
+
   function parseName(fullName) {
     var nameParts = fullName.split(':');
     return {
@@ -109,6 +112,7 @@ module.exports = function(options) {
       throw new Error(' Expected to find: "' + parsedName.fullName + '" within "' + moduleName + '" but got "undefined". Did you forget to `module.exports` within "' + moduleName + '"?');
     }
 
+
     // If using `export default`
     if (factory && factory['default']) {
       factory = factory['default'];
@@ -131,8 +135,8 @@ module.exports = function(options) {
   function resolveRouter(parsedName) {
     if (parsedName.fullName === 'router:main') {
       var name = options.modulePrefix + 'router';
-      if (options.context.keys().indexOf(name) !== -1) {
-        return options.context(name);
+      if (options.has.indexOf(name) !== -1) {
+        return options.context(name).default;
       }
     }
   }
