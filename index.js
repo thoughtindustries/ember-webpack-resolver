@@ -12,9 +12,6 @@ module.exports = function(options) {
   options.has = options.has || options.context.keys();
   options.components = options.components || Object.create(null);
 
-  window.webpackHas = options.has;
-  window.webpackRequire = options.context;
-
   function parseName(fullName) {
     var nameParts = fullName.split(':');
     return {
