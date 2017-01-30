@@ -1,6 +1,6 @@
 {
-  "name": "ember-webpack-resolver",
-  "version": "1.0.1",
+  "name": "ti-ember-webpack-resolver",
+  "version": "1.7.0",
   "description": "An Ember resolver for use with webpack",
   "main": "index.js",
   "files": [
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shama/ember-webpack-resolver.git"
+    "url": "git://github.com/thoughtindustries/ember-webpack-resolver.git"
   },
   "bugs": {
-    "url": "https://github.com/shama/ember-webpack-resolver/issues"
+    "url": "https://github.com/thoughtindustries/ember-webpack-resolver/issues"
   },
   "license": "MIT",
   "keywords": [
